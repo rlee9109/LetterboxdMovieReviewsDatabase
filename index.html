@@ -1,0 +1,72 @@
+<html>
+
+<!-- http://165.106.10.170:30046/ -->
+
+<head>
+  <title> Letterboxd Movie Reviews </title>
+  <style>
+    #div1 {
+      width: 100%;
+      padding: 50px 0;
+      text-align: left;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+
+    #div2 {
+      width: 100%;
+      padding: 50px 0;
+      text-align: left;
+      background-color: lightgreen;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <img src="letterboxd-vector-logo.jpg" alt="letterboxd website logo" style="width:512px; height:150px">
+  <h1> Letterboxd Movie Reviews Database</h1>
+  <h3> CMSC B383: Database Systems in Practice </h3>
+  <br>
+
+  Search for movies and reviews here! Which database would you like to use?
+  <!-- <p>Select which database to use: </p> -->
+  <br><button onclick="showPSQLFields()" name="PSQLfields">PostgreSQL</button>
+  <button onclick="showMongoFields()" name="PSQLfields">MongoDB</button>
+
+
+  <div id="div1" style='display: none'>
+    PostgreSQL Search
+    <p>
+    <form action="javascript:doPSQLQuery()">
+      Movie Title: <input type="text" name="PSQLTitle" id="PSQLTitle">
+      <br>Year Released: <input type="text" name="PSQLYear" id="PSQLYear">
+      <br>Original Language: <input type="text" name="PSQLLanguage" id="PSQLLanguage">
+      <!-- <br> <input type="submit" name="Submit"> -->
+    </form>
+    <br><button onclick="doPSQLQuery()" name="PSQLquery">Search</button>
+    <p>
+    <div id="gt"></div>
+    <div id="gt2"></div>
+  </div>
+
+  <div id="div2" style='display: none'>
+    MongoDB Search
+    <p>
+    <form>
+      Movie Title: <input type="text" name="MongoTitle" id="MongoTitle">
+      <br>Year Released: <input type="text" name="MongoYear" id="MongoYear">
+      <br>Original Language: <input type="text" name="MongoLanguage" id="MongoLanguage">
+    </form>
+    <br><button onclick="doMongoQuery()" name="Mongoquery">Search</button>
+    <p>
+    <div id="gt3"></div>
+    <div id="gt4"></div>
+  </div>
+
+
+</body>
+<script language="javascript" src="tbler.js"> </script>
+
+</html>
