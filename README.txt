@@ -9,7 +9,12 @@ Project Goal: Create a simple webpage that displays information from a database 
     - tbler.js : This file is the scripting for the html webpage. It reads user input from the webpage, calls on API endpoints, and creates tables from data.
     - index.html : This file builds the actual webpage interface.
     - letterboxd-vector-logo.jpg : image used in the webpage
-    - letterboxd_DDL.sql : Unchanged from hw4
+    - letterboxd_DDL.sql : This is the DDL SQL file for create PSQL Databases
+    - CSVtoPSQL.py : This file puts data into PSQL Databases
+    - CSVtoMongo.py : This file creates Mongo databases and puts in data
+    - hw4Report.pdf : report for part 1 and 2
+    - queries_psql.sql : This file tests the PostgreSQL database using PostgreSQL queries
+    - queries_mongo.py : This file tests the MongoDB database using MongoDB queries
 
 2. Webpage access: http://165.106.10.170:30046/
    (Webpage is currently being run continuously on a Bryn Mawr College server using nohup.)
